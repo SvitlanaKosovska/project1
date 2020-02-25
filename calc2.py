@@ -11,8 +11,6 @@ def exec(operation):
 
 def division_operation():
     """The function divides two numbers"""
-    global num1
-    global num2
     if num2 != 0:
         print("Result: ", num1 / num2)
     else:
@@ -21,29 +19,21 @@ def division_operation():
 
 def multiply_operation():
     """The function is multiplication two numbers"""
-    global num1
-    global num2
     print('Result:', num1 * num2)
 
 
 def adding_operation():
     """This function adds two numbers"""
-    global num1
-    global num2
     print('Result: ', num1 + num2)
 
 
 def subtraction_operation():
     """This function subtracts two numbers"""
-    global num1
-    global num2
     print('Result: ', num1 - num2)
 
 
 def power_of_a_number_operation():
     """this function raises the number to a power"""
-    global num1
-    global num2
     print('Result: ', pow(num1, num2))
 
 
