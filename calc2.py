@@ -1,3 +1,14 @@
+def exec(operation):
+    while True:
+        try:
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
+        except ValueError:
+            print('Invalid input')
+        else:
+            operation(num1, num2)
+        break
+
 def division_operation():
     """The function divides two numbers"""
     global num1
@@ -44,24 +55,16 @@ while True:
         if operation == 'exit':
             break
         else:
-            while True:
-                try:
-                    num1 = float(input("Enter first number: "))
-                    num2 = float(input("Enter second number: "))
-                except ValueError:
-                    print('Invalid input')
-                else:
-                    if operation == 'div':
-                        division_operation()
-                    elif operation == 'mult':
-                        multiply_operation()
-                    elif operation == 'add':
-                        adding_operation()
-                    elif operation == 'sub':
-                        subtraction_operation()
-                    elif operation == 'pow':
-                        power_of_a_number_operation()
-                break
+            if operation == 'div':
+                exec(division_operation)
+            elif operation == 'mult':
+                exec(multiply_operation)
+            elif operation == 'add':
+                exec(adding_operation)
+            elif operation == 'sub':
+                exec(subtraction_operation)
+            elif operation == 'pow':
+                exec(power_of_a_number_operation)
     else:
         print('Invalid input')
 
