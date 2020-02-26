@@ -9,7 +9,7 @@ def exec(operation):
             operation(num1, num2)
         break
 
-def division_operation():
+def division_operation(num1, num2):
     """The function divides two numbers"""
     if num2 != 0:
         print("Result: ", num1 / num2)
@@ -17,22 +17,22 @@ def division_operation():
         print("""You can't divide by zero!""")
 
 
-def multiply_operation():
+def multiply_operation(num1, num2):
     """The function is multiplication two numbers"""
     print('Result:', num1 * num2)
 
 
-def adding_operation():
+def adding_operation(num1, num2):
     """This function adds two numbers"""
     print('Result: ', num1 + num2)
 
 
-def subtraction_operation():
+def subtraction_operation(num1, num2):
     """This function subtracts two numbers"""
     print('Result: ', num1 - num2)
 
 
-def power_of_a_number_operation():
+def power_of_a_number_operation(num1, num2):
     """this function raises the number to a power"""
     print('Result: ', pow(num1, num2))
 
