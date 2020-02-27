@@ -5,9 +5,10 @@ def exec(operation):
             num2 = float(input("Enter second number: "))
         except ValueError:
             print('Invalid input')
+            continue
         else:
             operation(num1, num2)
-        break
+            break
 
 def division_operation(num1, num2):
     """The function divides two numbers"""
