@@ -5,10 +5,10 @@ def exec(operation):
             num2 = float(input("Enter second number: "))
         except ValueError:
             print('Invalid input')
-            continue
         else:
             operation(num1, num2)
             break
+
 
 def division_operation(num1, num2):
     """The function divides two numbers"""
@@ -42,20 +42,18 @@ print('Type "exit" to quit')
 
 while True:
     operation = input("Select operation (add, sub, mult, div, pow, exit) ")
-    if operation in '(add, sub, mult, div, pow, exit)':
-        if operation == 'exit':
-            break
-        else:
-            if operation == 'div':
-                exec(division_operation)
-            elif operation == 'mult':
-                exec(multiply_operation)
-            elif operation == 'add':
-                exec(adding_operation)
-            elif operation == 'sub':
-                exec(subtraction_operation)
-            elif operation == 'pow':
-                exec(power_of_a_number_operation)
+    if operation == 'exit':
+        break
+    elif operation == 'div':
+        exec(division_operation)
+    elif operation == 'mult':
+        exec(multiply_operation)
+    elif operation == 'add':
+        exec(adding_operation)
+    elif operation == 'sub':
+        exec(subtraction_operation)
+    elif operation == 'pow':
+        exec(power_of_a_number_operation)
     else:
         print('Invalid input')
 
